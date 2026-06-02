@@ -1,0 +1,4 @@
+-git init: khởi tạo git
+-git add <file name>: add thêm file
+-git add . : add thêm những file còn lại
+-git commit -m"message": commit code kèm theo message theo convention(feat: thêm file, fix: update file)

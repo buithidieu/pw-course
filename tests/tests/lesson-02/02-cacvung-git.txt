@@ -1,0 +1,2 @@
+1.Tạo 3 file: file1, file2, file3
+2.
