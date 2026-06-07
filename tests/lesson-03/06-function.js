@@ -32,18 +32,21 @@ const students =[
 const threshold = 100;
 function getTopStudents (students, threshold){
     let result = [];
-    for (let i = 1; i < students.length; i++){
-    if (students.score >= threshold){
-        console.log(`Danh sach hoc sinh co diem cao la ${students.name}`);
-        result.push(students.name);
+    for (let i = 0; i < students.length; i++){ //i =0 vi trong mang bat dau tu 0
+    if (students[i].score >= threshold){
+        console.log(`Danh sach hoc sinh co diem cao la ${students[i].name}`);
+        result.push(students[i].name);
     }
 }
 return result;
 }
+const TopStudent = getTopStudents(students, threshold);
+console.log("Danh sach la", TopStudent);
+
 
 //viet ham calculateInterest 
 function calculateInterest(principal, rate, years){
-    const lai = principal + principal*rate*years %100;
+    const lai = principal + (principal*rate*years/100);
     console.log(`So tien lai la ${lai}`);
     return lai;
 }
