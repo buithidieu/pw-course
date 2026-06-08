@@ -30,9 +30,28 @@ for (let i =1; i<=10; i++){
 }
 
 //tinh tong doanh thu cua 12 thang trog nam dua tren mang doanh thu da cho va in ra tong doanh thu
-
-const month = i;
-for (let i = 1 ; i <= 12; i++){
-     doanhthu += i+100;
+//khai báo 1 biến lưu trữ tổng (let sum = 0) ngay trước khi chạy vòng lặp
+//Sau đó dùng vòng lặp for duyệt qua từng phần tử của mảng doanh thu (từ i = 0 đến i < doanhThu.length)
+//Ở mỗi vòng lặp lấy giá trị doanh thu của tháng đó (doanhThu[i].total) cộng dồn vào biến `sum`
+//doanh thu ={"month":2, "total": 100}
+const doanhthu = [
+    {"month": 1, "total": 100},
+    {"month": 2, "total": 100},
+    {"month": 3, "total": 300},
+    {"month": 4, "total": 400},
+    {"month": 5, "total": 100},
+    {"month": 6, "total": 600},
+    {"month": 7, "total": 700},
+    {"month": 8, "total": 10},
+    {"month": 9, "total": 10},
+    {"month": 10, "total": 50},
+    {"month": 11, "total": 100},
+    {"month": 12, "total": 400}
+] ;
+    let sum = 0;
+for (let i = 0 ; i < doanhthu.length; i++){//mang se start tu vi tri 0
+    sum += doanhthu[i].total;
 }
-console.log(doanhthu);
+//console.log(`Tong doanh thu 12 thang la: ${sum}`);
+console.log("Tong doanh thu 12 thang la", sum);
+
