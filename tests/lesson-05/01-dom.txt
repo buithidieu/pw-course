@@ -1,0 +1,24 @@
+1.DOM co ban cua 1 trang web
+DOM : Document Object Model
+document/ root element <html>
+-Element <head>: Element <title>: Text "My title|"
+-Element <body>:
++Element <h1>: Text "A heading"
++Element <a>: Atribute href, Text "Link text"
+
+Note: cac the tieu chuan thuong gap
+<html> the goc cua trang
+<head> chua metadata: tieu de website, hien thi Google
+<body> noi dung cua ca website hien thi
+<span> inline container
+<header> <footer> <nav> <section>: the ngu nghia
+
+2.cau truc html cua 1 bang table
+thẻ <table> tạo bảng dữ liệu, 
+<thead> chứa phần đầu bảng
+<tbody> chứa nội dung chính
+<tfoot> chứa phần chân bảng 
+<tr> tạo hàng
+<th> tạo ô tiêu đề
+<td> tạo ô dữ liệu
+thuộc tính colspan dùng để gộp cột
