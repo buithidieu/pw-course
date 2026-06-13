@@ -1,4 +1,4 @@
-import {expect, test}  from  '@Playwright/test';
+import {expect, test}  from  '@playwright/test';
 
 test('bai tap1', async ({page}) => {
     await test.step("Navigate to page", async() => {
