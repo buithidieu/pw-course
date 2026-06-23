@@ -12,9 +12,13 @@ test('bai tap1', async ({page}) => {
         await page.locator("//input[@name='username']").fill('Bui Thi Dieu');
         await page.locator("//input[@name='email']").fill('dieuhanu2008@gmail.com');
         await page.locator("//input[@value='female']").check();
+        //khai bao bien country
+        const country = page.locator("//select[@id='country']");
+        await country.selectOption('Canada');
         await page.locator("//input[@value='traveling']").check();
         await page.locator("//select[@name='interests']").selectOption("Technology");
         await page.locator("//input[@id='dob']").fill('1995-08-20');
+        await page.locator("//input[@id='profile']").setInputFiles(['tests/lesson-05/DSCF0127.JPG']);
         await page.locator("//textarea[@name='bio']").fill("BIO");
         await page.locator("//input[@name='newsletter']").click();
         await page.locator("//div[@id='starRating']").click();
